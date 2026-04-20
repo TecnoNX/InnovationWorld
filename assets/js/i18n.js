@@ -1,0 +1,320 @@
+/**
+ * Innovation World - i18n (EN/ES) + Dark Mode
+ */
+
+(function() {
+  "use strict";
+
+  // â”€â”€ Translations â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  const translations = {
+    es: {
+      "nav.home": "Home",
+      "nav.about": "Nosotros",
+      "nav.services": "Servicios",
+      "nav.portfolio": "Portafolio",
+      "nav.team": "Equipo",
+      "nav.contact": "Contacto",
+      "nav.getstarted": "Empezar",
+      "hero.title": "Mejores Soluciones Para Su Negocio",
+      "hero.subtitle": "Somos un equipo de ingenieros talentosos que hacemos sitios web y apps mÃ³viles con buenas prÃ¡cticas tecnolÃ³gicas.",
+      "hero.btn_start": "Empezar",
+      "about.title": "About Us / Nosotros",
+      "about.p1": "Nos enfocamos en el desarrollo de soluciones tecnolÃ³gicas, que impulsen el crecimiento de su empresa, buscando siempre la manera de ofrecer excelente calidad y precios asequibles, en todos nuestros servicios.",
+      "about.item1": "Redes de ComputaciÃ³n y Ciberseguridad IT",
+      "about.item2": "Desarrollo Web y Aplicaciones MÃ³viles",
+      "about.item3": "Marketing Digital",
+      "about.p2": "Hoy en dÃ­a todos nosotros trabajamos o manejamos algunas clases de datos en nuestra organizaciÃ³n, evitar que esos datos caigan en manos criminales, es nuestro propÃ³sito.",
+      "about.learn_more": "Saber MÃ¡s",
+      "why.title": "Agencia <strong>Digital Creativa</strong>",
+      "why.subtitle": "Nuestro staff creativo, siempre encuentra esa idea, que se adapta y encaja en cada uno de tus proyectos, tratando siempre de trabajarla en todas sus dimensiones hasta convertirla en una idea exitosa para su proyecto.",
+      "why.q1": "Â¿Podemos hacer crecer rÃ¡pidamente tu negocio?",
+      "why.a1": "Muchos de nuestros visitantes nos hacen esa pregunta, y la verdad es que solo podemos decirle, que en nuestra agencia contamos con las herramientas y la experiencia requerida, para posicionar tu marca en el gusto de aquellos prospectos que consumen tu marca.",
+      "why.q2": "Incrementa las ventas",
+      "why.a2": "Buscamos las mejores herramientas tecnolÃ³gicas para adaptarlas a sus estrategias de ventas, para que juntas ayuden a incrementar las ventas de sus productos o servicios.",
+      "why.q3": "AdministraciÃ³n de servidores",
+      "why.a3": "Nuestro objetivo primordial es brindar el soporte requerido en los servidores de su compaÃ±Ã­a o negocio, por grande o pequeÃ±o que sea, ya sea funcione con Linux o Windows.",
+      "skills.title": "Trabajamos con las tecnologÃ­as mÃ¡s avanzadas del mercado digital",
+      "skills.subtitle": "Nuestros proyectos estÃ¡n realizados con:",
+      "skills.s1": "CMS WEBS<i class=\"val\">100%</i>",
+      "skills.s2": "Dart Flutter <i class=\"val\">90%</i>",
+      "skills.s3": "JavaScript, C# and Python <i class=\"val\">75%</i>",
+      "skills.s4": "Photoshop, Figma and Lunacy <i class=\"val\">55%</i>",
+      "services.title": "Services / Servicios",
+      "services.subtitle": "Nuestro staff de ingenieros, siempre encuentra esa idea, que se adapta y encaja en cada uno de tus proyectos, tratando siempre de trabajarla en todas sus dimensiones hasta convertirla en una idea exitosa para su proyecto.",
+      "services.s1.name": "Desarrollo Web",
+      "services.s1.desc": "Tener una app nunca ha sido tan fÃ¡cil como ahora, tu marca puede tener su propia app y asÃ­ llegar al pÃºblico que prefieras.",
+      "services.s2.name": "Ciberseguridad IT",
+      "services.s2.desc": "Hoy en dÃ­a todos nosotros trabajamos o manejamos algunas clases de datos en nuestra organizaciÃ³n, evitar que esos datos caigan en manos criminales, es nuestro propÃ³sito.",
+      "services.s3.name": "ConsultorÃ­a Digital",
+      "services.s3.desc": "Nuestros servicios de consultorÃ­a tecnolÃ³gica estÃ¡n basados en satisfacer las necesidades tecnolÃ³gicas de nuestros clientes, y asÃ­ ayudarlo a encontrar las herramientas adecuadas que le hagan falta a su empresa.",
+      "services.s4.name": "Desarrollo de App MÃ³viles",
+      "services.s4.desc": "Nos enfocamos en el desarrollo de soluciones y tecnologÃ­as mÃ³viles, que impulsen el crecimiento de su empresa, buscando siempre la manera de ofrecer excelente calidad y precios asequibles.",
+      "cta.title": "Â¿QuÃ© esperas para solicitar nuestros servicios?",
+      "cta.subtitle": "Como Agencia Digital, comprendemos todos los aspectos o todas las partes necesarias para que su organizaciÃ³n estÃ© completa en el Ã¡mbito Digital.",
+      "cta.btn": "Comenzar Ahora",
+      "portfolio.title": "Portafolio",
+      "portfolio.subtitle": "Proyectos que demuestran nuestra calidad y creatividad en cada desarrollo.",
+      "portfolio.all": "Todos",
+      "portfolio.app": "App",
+      "portfolio.card": "Otros",
+      "portfolio.web": "Web",
+      "portfolio.p1.name": "App 1",
+      "portfolio.p1.type": "App",
+      "portfolio.p2.name": "Web 3",
+      "portfolio.p2.type": "Web",
+      "portfolio.p3.name": "App 2",
+      "portfolio.p3.type": "App",
+      "portfolio.p4.name": "Card 2",
+      "portfolio.p4.type": "Card",
+      "portfolio.p5.name": "Web 2",
+      "portfolio.p5.type": "Web",
+      "portfolio.p6.name": "App 3",
+      "portfolio.p6.type": "App",
+      "portfolio.p7.name": "Card 1",
+      "portfolio.p7.type": "Card",
+      "portfolio.p8.name": "Card 3",
+      "portfolio.p8.type": "Card",
+      "portfolio.p9.name": "Web 3",
+      "portfolio.p9.type": "Web",
+      "team.title": "Equipo",
+      "team.subtitle": "Conoce al equipo detrÃ¡s de Innovation World.",
+      "team.t1.role": "CTO",
+      "team.t1.desc": "Liderando la arquitectura tecnolÃ³gica y seguridad IT en Innovation World.",
+      "team.t2.role": "Product Manager",
+      "team.t2.desc": "GestiÃ³n de proyectos y estrategia digital para cada cliente.",
+      "team.t3.role": "Marketing CEO",
+      "team.t3.desc": "Impulsando el crecimiento digital y estrategias de marketing innovadoras.",
+      "team.t4.role": "Admin Proyect",
+      "team.t4.desc": "AdministraciÃ³n y coordinaciÃ³n de proyectos para entrega puntual.",
+      "pricing.title": "Tarifas / Precios",
+      "pricing.subtitle": "Nuestras tarifas estÃ¡n en Pesos Dominicanos (RD$). Todos los precios incluyen soporte bÃ¡sico.",
+      "pricing.one_time": "/ una vez",
+      "pricing.from": "/ desde",
+      "pricing.cta": "Solicitar",
+      "pricing.plan1.name": "Landing Page",
+      "pricing.plan1.f1": "1 pÃ¡gina web profesional",
+      "pricing.plan1.f2": "DiseÃ±o responsive",
+      "pricing.plan1.f3": "Formulario de contacto",
+      "pricing.plan1.f4": "SEO bÃ¡sico",
+      "pricing.plan1.f5": "Certificado SSL",
+      "pricing.plan2.name": "Sitio Web Completo",
+      "pricing.plan2.f1": "Hasta 7 pÃ¡ginas",
+      "pricing.plan2.f2": "CMS (WordPress / Panel)",
+      "pricing.plan2.f3": "DiseÃ±o personalizado",
+      "pricing.plan2.f4": "SEO avanzado",
+      "pricing.plan2.f5": "Certificado SSL incluido",
+      "pricing.plan3.name": "App MÃ³vil",
+      "pricing.plan3.f1": "App Android + iOS",
+      "pricing.plan3.f2": "Flutter / React Native",
+      "pricing.plan3.f3": "Push notifications",
+      "pricing.plan3.f4": "PublicaciÃ³n en tiendas",
+      "pricing.plan3.f5": "Soporte 3 meses incluido",
+      "faq.title": "Preguntas Frecuentes",
+      "faq.subtitle": "Todo lo que necesitas saber sobre nuestros servicios y procesos.",
+      "faq.q1": "Â¿CuÃ¡nto tiempo toma desarrollar una pÃ¡gina web?",
+      "faq.a1": "El tiempo varÃ­a segÃºn la complejidad del proyecto. Una landing page puede estar lista en 5-7 dÃ­as, mientras que un sitio web completo puede tomar 3-6 semanas.",
+      "faq.q2": "Â¿Ofrecen soporte despuÃ©s de entregar el proyecto?",
+      "faq.a2": "SÃ­, todos nuestros planes incluyen soporte bÃ¡sico. TambiÃ©n ofrecemos planes de mantenimiento mensual para quienes lo necesiten.",
+      "faq.q3": "Â¿Pueden hacer aplicaciones para Android y iOS?",
+      "faq.a3": "SÃ­, desarrollamos apps hÃ­bridas con Flutter y React Native que funcionan en ambas plataformas desde un solo cÃ³digo.",
+      "faq.q4": "Â¿Aceptan pagos desde RepÃºblica Dominicana?",
+      "faq.a4": "SÃ­, aceptamos transferencias bancarias locales, payout y criptomedas. Precios en RD$.",
+      "faq.q5": "Â¿QuÃ© incluye el servicio de ciberseguridad?",
+      "faq.a5": "AuditorÃ­as de seguridad, configuraciÃ³n de firewalls, protecciÃ³n de datos y capacitaciÃ³n a su equipo.",
+      "contact.title": "Contacto",
+      "contact.subtitle": "ContÃ¡ctanos y haz realidad tu proyecto digital.",
+      "contact.location": "UbicaciÃ³n:",
+      "contact.phone": "TelÃ©fono:",
+      "contact.name": "Tu Nombre",
+      "contact.email": "Tu Email",
+      "contact.subject": "Asunto",
+      "contact.message": "Mensaje",
+      "contact.loading": "Enviando...",
+      "contact.sent": "Â¡Tu mensaje ha sido enviado. Gracias!",
+      "contact.send": "Enviar Mensaje",
+      "footer.phone": "TelÃ©fono:",
+      "footer.links": "Enlaces Ãštiles",
+      "footer.services": "Nuestros Servicios",
+      "footer.social": "Nuestras Redes",
+      "footer.social_desc": "SÃ­guenos en redes sociales"
+    },
+    en: {
+      "nav.home": "Home",
+      "nav.about": "About",
+      "nav.services": "Services",
+      "nav.portfolio": "Portfolio",
+      "nav.team": "Team",
+      "nav.contact": "Contact",
+      "nav.getstarted": "Get Started",
+      "hero.title": "Best Solutions For Your Business",
+      "hero.subtitle": "We are a team of talented engineers building websites and mobile apps with good technological practices.",
+      "hero.btn_start": "Get Started",
+      "about.title": "About Us",
+      "about.p1": "We focus on developing technological solutions that drive your company's growth, always seeking to offer excellent quality and affordable prices for all our services.",
+      "about.item1": "Computer Networks and IT Cybersecurity",
+      "about.item2": "Web Development and Mobile Applications",
+      "about.item3": "Digital Marketing",
+      "about.p2": "Today all of us work with or manage some kind of data in our organization. Preventing that data from falling into criminal hands is our purpose.",
+      "about.learn_more": "Learn More",
+      "why.title": "Creative <strong>Digital Agency</strong>",
+      "why.subtitle": "Our creative staff always finds that idea that fits and matches each of your projects, working on it in all its dimensions until it becomes a successful idea for your project.",
+      "why.q1": "Can we rapidly grow your business?",
+      "why.a1": "Many of our visitors ask us that question, and the truth is we can only tell them that our agency has the tools and experience required to position your brand in the minds of those prospects who consume your brand.",
+      "why.q2": "Increase sales!",
+      "why.a2": "We look for the best technological tools to adapt them to your sales strategies, so that together they help increase sales of your products or services.",
+      "why.q3": "Server administration",
+      "why.a3": "Our primary objective is to provide the required support on your company or business servers, whether it runs Linux or Windows.",
+      "skills.title": "We work with the most advanced technologies in the digital market",
+      "skills.subtitle": "Our projects are built with:",
+      "skills.s1": "CMS WEBS<i class=\"val\">100%</i>",
+      "skills.s2": "Dart Flutter <i class=\"val\">90%</i>",
+      "skills.s3": "JavaScript, C# and Python <i class=\"val\">75%</i>",
+      "skills.s4": "Photoshop, Figma and Lunacy <i class=\"val\">55%</i>",
+      "services.title": "Services",
+      "services.subtitle": "Our engineering staff always finds that idea that fits and matches each of your projects, working on it in all its dimensions until it becomes a successful idea for your project.",
+      "services.s1.name": "Web Development",
+      "services.s1.desc": "Having an app has never been easier than now. Your brand can have its own app and reach the audience you prefer.",
+      "services.s2.name": "IT Cybersecurity",
+      "services.s2.desc": "Today all of us work with or manage some kind of data in our organization. Preventing that data from falling into criminal hands is our purpose.",
+      "services.s3.name": "Digital Consulting",
+      "services.s3.desc": "Our technology consulting services are based on meeting the technological needs of our clients, helping them find the right tools their company is missing.",
+      "services.s4.name": "Mobile App Development",
+      "services.s4.desc": "We focus on developing mobile technology solutions that drive your company's growth, always seeking to offer excellent quality and affordable prices.",
+      "cta.title": "What are you waiting for to request our services?",
+      "cta.subtitle": "As a Digital Agency, we understand all the aspects needed for your organization to be complete in the Digital realm.",
+      "cta.btn": "Start Now",
+      "portfolio.title": "Portfolio",
+      "portfolio.subtitle": "Projects that demonstrate our quality and creativity in every development.",
+      "portfolio.all": "All",
+      "portfolio.app": "App",
+      "portfolio.card": "Others",
+      "portfolio.web": "Web",
+      "portfolio.p1.name": "App 1",
+      "portfolio.p1.type": "App",
+      "portfolio.p2.name": "Web 3",
+      "portfolio.p2.type": "Web",
+      "portfolio.p3.name": "App 2",
+      "portfolio.p3.type": "App",
+      "portfolio.p4.name": "Card 2",
+      "portfolio.p4.type": "Card",
+      "portfolio.p5.name": "Web 2",
+      "portfolio.p5.type": "Web",
+      "portfolio.p6.name": "App 3",
+      "portfolio.p6.type": "App",
+      "portfolio.p7.name": "Card 1",
+      "portfolio.p7.type": "Card",
+      "portfolio.p8.name": "Card 3",
+      "portfolio.p8.type": "Card",
+      "portfolio.p9.name": "Web 3",
+      "portfolio.p9.type": "Web",
+      "team.title": "Team",
+      "team.subtitle": "Meet the team behind Innovation World.",
+      "team.t1.role": "CTO",
+      "team.t1.desc": "Leading technology architecture and IT security at Innovation World.",
+      "team.t2.role": "Product Manager",
+      "team.t2.desc": "Project management and digital strategy for every client.",
+      "team.t3.role": "Marketing CEO",
+      "team.t3.desc": "Driving digital growth and innovative marketing strategies.",
+      "team.t4.role": "Project Admin",
+      "team.t4.desc": "Project administration and coordination for on-time delivery.",
+      "pricing.title": "Pricing / Rates",
+      "pricing.subtitle": "Our rates are in Dominican Pesos (RD$). All prices include basic support.",
+      "pricing.one_time": "/ one-time",
+      "pricing.from": "/ from",
+      "pricing.cta": "Request",
+      "pricing.plan1.name": "Landing Page",
+      "pricing.plan1.f1": "1 professional web page",
+      "pricing.plan1.f2": "Responsive design",
+      "pricing.plan1.f3": "Contact form",
+      "pricing.plan1.f4": "Basic SEO",
+      "pricing.plan1.f5": "SSL Certificate",
+      "pricing.plan2.name": "Complete Website",
+      "pricing.plan2.f1": "Up to 7 pages",
+      "pricing.plan2.f2": "CMS (WordPress / Panel)",
+      "pricing.plan2.f3": "Custom design",
+      "pricing.plan2.f4": "Advanced SEO",
+      "pricing.plan2.f5": "SSL Certificate included",
+      "pricing.plan3.name": "Mobile App",
+      "pricing.plan3.f1": "Android + iOS App",
+      "pricing.plan3.f2": "Flutter / React Native",
+      "pricing.plan3.f3": "Push notifications",
+      "pricing.plan3.f4": "Store publishing",
+      "pricing.plan3.f5": "3 months support included",
+      "faq.title": "Frequently Asked Questions",
+      "faq.subtitle": "Everything you need to know about our services and processes.",
+      "faq.q1": "How long does it take to develop a website?",
+      "faq.a1": "Time varies by project complexity. A landing page can be ready in 5-7 days, while a complete website can take 3-6 weeks.",
+      "faq.q2": "Do you offer support after project delivery?",
+      "faq.a2": "Yes, all our plans include basic support. We also offer monthly maintenance plans for those who need it.",
+      "faq.q3": "Can you build apps for Android and iOS?",
+      "faq.a3": "Yes, we develop hybrid apps with Flutter and React Native that work on both platforms from a single codebase.",
+      "faq.q4": "Do you accept payments from Dominican Republic?",
+      "faq.a4": "Yes, we accept local bank transfers, payout, and cryptocurrency. Prices in RD$.",
+      "faq.q5": "What does the cybersecurity service include?",
+      "faq.a5": "Security audits, firewall configuration, data protection, and team training.",
+      "contact.title": "Contact",
+      "contact.subtitle": "Contact us and make your digital project a reality.",
+      "contact.location": "Location:",
+      "contact.phone": "Phone:",
+      "contact.name": "Your Name",
+      "contact.email": "Your Email",
+      "contact.subject": "Subject",
+      "contact.message": "Message",
+      "contact.loading": "Sending...",
+      "contact.sent": "Your message has been sent. Thank you!",
+      "contact.send": "Send Message",
+      "footer.phone": "Phone:",
+      "footer.links": "Useful Links",
+      "footer.services": "Our Services",
+      "footer.social": "Our Networks",
+      "footer.social_desc": "Follow us on social media"
+    }
+  };
+
+  // â”€â”€ Language Toggle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  let currentLang = localStorage.getItem("lang") || "es";
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem("lang", lang);
+    document.getElementById("lang-label").textContent = lang === "es" ? "EN" : "ES";
+
+    document.querySelectorAll("[data-i18n]").forEach(function(el) {
+      var key = el.getAttribute("data-i18n");
+      if (translations[lang][key]) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
+
+    document.documentElement.lang = lang;
+  }
+
+  document.getElementById("lang-toggle").addEventListener("click", function() {
+    setLanguage(currentLang === "es" ? "en" : "es");
+  });
+
+  // Apply saved language on load
+  setLanguage(currentLang);
+
+  // â”€â”€ Dark Mode Toggle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  var darkMode = localStorage.getItem("theme") === "dark";
+
+  function applyDarkMode(isDark) {
+    if (isDark) {
+      document.body.classList.add("dark-mode");
+      document.getElementById("theme-icon").className = "bi bi-sun-fill";
+    } else {
+      document.body.classList.remove("dark-mode");
+      document.getElementById("theme-icon").className = "bi bi-moon-fill";
+    }
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  }
+
+  applyDarkMode(darkMode);
+
+  document.getElementById("theme-toggle").addEventListener("click", function() {
+    darkMode = !darkMode;
+    applyDarkMode(darkMode);
+  });
+
+})();
